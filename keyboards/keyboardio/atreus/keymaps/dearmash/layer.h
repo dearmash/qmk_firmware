@@ -5,6 +5,7 @@ enum layer_names {
     _SYMBOLS,
     _DIGITS,
     _MOVEMENT,
+    _WINDOWS,
     _SHORTCUTS,
     _EMPTY,
     _BLOCKED,
