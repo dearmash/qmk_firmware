@@ -21,6 +21,9 @@
 #define _WD_UP LALT(KC_UP)
 #define _WD_RGT LALT(KC_RGHT)
 
+#define _BST_MV (LSFT(KC_LALT))
+#define _BST_SZ (LSFT(KC_LGUI))
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_BASE] = LAYOUT(
     _SHOT_Q, KC_W   , KC_E   , KC_R   , KC_T   ,                      KC_Y   , KC_U   , KC_I   , KC_O   , KC_P   ,
@@ -42,7 +45,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   [_MOVEMENT] = LAYOUT(
     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      XXXXXXX, _WD_LFT, _WD_DWN, _WD_UP , _WD_RGT,
-    KC_LSFT, XXXXXXX, XXXXXXX, XXXXXXX, _WIND_G,                      XXXXXXX, KC_LEFT, KC_DOWN, KC_UP  , KC_RGHT,
+    KC_LSFT, _BST_MV, _BST_SZ, XXXXXXX, _WIND_G,                      XXXXXXX, KC_LEFT, KC_DOWN, KC_UP  , KC_RGHT,
     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX, KC_INS , KC_HOME, KC_PGDN, KC_PGUP, KC_END ,
     KC_LCTL, KC_LALT, KC_TAB , KC_DEL , KC_BSPC, _GUIESC,    KC_ENT , KC_SPC , XXXXXXX, XXXXXXX, KC_BSLS, KC_QUOT
   ),
